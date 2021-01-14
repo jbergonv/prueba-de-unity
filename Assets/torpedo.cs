@@ -6,7 +6,7 @@ public class torpedo : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    int contador = 0;
+    public float velocidad = -0.1f;
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class torpedo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, -0.5f,0);
+        transform.Translate(0, velocidad,0);
         
     }
 }
